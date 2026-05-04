@@ -25,7 +25,7 @@ const customStyles = `
 // ============================================================================
 const DATA_PORTOFOLIO = {
   profil: {
-    nama: "Nama Anda Disini", // Ganti dengan nama Anda
+    nama: "Arina Sholiha", // Ganti dengan nama Anda
     bidangStudi: "PPG Informatika",
     asalDaerah: "Saya berasal dari daerah yang sedang berkembang pesat secara digital. Menariknya, walau teknologi mulai masuk ke berbagai aspek kehidupan di sini, masyarakatnya tetap menjaga kearifan lokal. Ini yang bikin saya sadar kalau teknologi itu harus diajarkan sesuai dengan konteks lingkungan siswanya.",
     inspirasi: "Jujur, awalnya saya cuma suka ngoding dan ngotak-ngatik komputer di kamar. Tapi sewaktu ada kesempatan ngajar dasar IT di sebuah sekolah binaan, ngeliat antusiasme anak-anak waktu program 'Hello World' mereka berhasil jalan itu rasanya luar biasa. Momen itu yang bikin saya mantap milih jalan jadi guru.",
