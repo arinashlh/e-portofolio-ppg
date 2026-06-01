@@ -35,6 +35,15 @@ const DATA_PORTOFOLIO = {
     kutipan: '"Guru yang baik itu ibarat programmer yang sabar; mereka tahu gimana men-debug kebingungan siswanya baris demi baris sampai jadi sebuah pemahaman yang jalan tanpa error."',
     fotoProfil: "https://placeholder.co/400x400/1abc9c/ffffff?text=AS" 
   },
+  sekolahPPL: {
+    nama: "SMA Negeri 24 Bandung",
+    kepalaSekolah: "Ibu Lia Aprilina, S.Pd., M.Pd.",
+    jumlahSiswa: "± 1.240 Siswa",
+    kurikulum: "Kurikulum Merdeka",
+    visi: "Terwujudnya sekolah unggul, berkarakter yang dilandasi ketaatan beragama, berbudaya, berbasis lingkungan dan berperilaku bersih, sehat, sehingga mampu hidup selaras dengan tuntutan era global.",
+    fasilitas: "32 Ruang Kelas, 6 Laboratorium, Perpustakaan Inklusif, UKS, Masjid Darul Fikri.",
+    keunggulan: "32 Jenis Ekstrakurikuler, Program Karakter 'Garda Madani', serta Infrastruktur IT berbasis Server Lokal."
+  },
   modelGuru: {
     misi: [
       "Menciptakan suasana kelas atau lab yang aman buat trial & error (nggak takut salah ketik kode).",
@@ -80,20 +89,20 @@ const DATA_PORTOFOLIO = {
   penilaian: {
     deskripsi: "Rangkuman nilai dan obrolan reflektif bersama Guru Pamong (GP) dan Dosen Pembimbing Lapangan (DPL) selama menempuh PPL.",
     lampiran: [
-      { nama: "Lampiran 1: Dokumen Laporan Hasil Observasi Lengkap (Format Lampiran 6)", status: "Telah Dinilai", link: "#" },
-      { nama: "Lampiran 2: Isian Lembar Kerja LK 1 – Orientasi dan Observasi Manajemen Sekolah", status: "Telah Dinilai", link: "#" },
+      { nama: "Lampiran 1: Dokumen Laporan Hasil Observasi Lengkap", status: "Telah Dinilai", link: "#" },
+      { nama: "Lampiran 2: Isian Lembar Kerja LK 1 – Orientasi dan Observasi Manajemen", status: "Telah Dinilai", link: "#" },
       { nama: "Lampiran 3: Isian Lembar Kerja LK 2 – Observasi Lingkungan Belajar", status: "Telah Dinilai", link: "#" },
-      { nama: "Lampiran 4: Isian Lembar Kerja LK 3 – Refleksi Pembelajaran Praktik Asistensi", status: "Telah Dinilai", link: "#" },
-      { nama: "Lampiran 5: Isian Lembar Kerja LK 4 – Perangkat dan Pelaksanaan Pembelajaran", status: "Telah Dinilai", link: "#" },
-      { nama: "Lampiran 6: Lembar Observasi Karakteristik Peserta Didik (Telah Diparaf)", status: "Selesai", link: "#" },
-      { nama: "Lampiran 7: Lembar Observasi Rencana Pelaksanaan Pembelajaran (RPP)", status: "Selesai", link: "#" },
-      { nama: "Lampiran 8: Lembar Observasi Pelaksanaan Pembelajaran (Observer dan Supervisor)", status: "Selesai", link: "#" },
-      { nama: "Lampiran 9: Lembar Observasi Manajemen Sekolah dan Lingkungan Belajar", status: "Selesai", link: "#" },
-      { nama: "Lampiran 10: Jurnal Harian Mahasiswa PPL 1 (Verifikasi Per 5 Hari)", status: "Terverifikasi", link: "#" },
-      { nama: "Lampiran 11: Format Penilaian Penyusunan Perangkat Pembelajaran oleh DPL dan GP", status: "Telah Dinilai", link: "#" },
-      { nama: "Lampiran 12: Format Penilaian Pelaksanaan Pembelajaran oleh DPL dan GP", status: "Telah Dinilai", link: "#" },
+      { nama: "Lampiran 4: Isian Lembar Kerja LK 3 – Refleksi Praktik Asistensi", status: "Telah Dinilai", link: "#" },
+      { nama: "Lampiran 5: Isian Lembar Kerja LK 4 – Perangkat dan Pelaksanaan", status: "Telah Dinilai", link: "#" },
+      { nama: "Lampiran 6: Lembar Observasi Karakteristik Peserta Didik", status: "Selesai", link: "#" },
+      { nama: "Lampiran 7: Lembar Observasi Rencana Pelaksanaan Pembelajaran", status: "Selesai", link: "#" },
+      { nama: "Lampiran 8: Lembar Observasi Pelaksanaan Pembelajaran", status: "Selesai", link: "#" },
+      { nama: "Lampiran 9: Lembar Observasi Manajemen Sekolah", status: "Selesai", link: "#" },
+      { nama: "Lampiran 10: Jurnal Harian Mahasiswa PPL 1", status: "Terverifikasi", link: "#" },
+      { nama: "Lampiran 11: Format Penilaian Penyusunan Perangkat Pembelajaran", status: "Telah Dinilai", link: "#" },
+      { nama: "Lampiran 12: Format Penilaian Pelaksanaan Pembelajaran", status: "Telah Dinilai", link: "#" },
       { nama: "Lampiran 13: Format Penilaian Kompetensi Personal dan Sosial", status: "Telah Dinilai", link: "#" },
-      { nama: "Lampiran 14: Dokumentasi Foto Kegiatan (Proses Mengajar, Diskusi, dan Kegiatan Sekolah)", status: "Selesai", link: "#" },
+      { nama: "Lampiran 14: Dokumentasi Foto Kegiatan Lapangan", status: "Selesai", link: "#" },
       { nama: "Lampiran 15: Jurnal Refleksi Akhir PPL", status: "Telah Dinilai", link: "#" }
     ],
     catatanAkhir: "Mahasiswa menunjukkan progress yang riil dari awal hingga akhir siklus. Cara komunikasi dengan siswa di lab makin interaktif dan media ajar yang dipakai sangat relevan dengan gaya belajar peserta didik saat ini."
@@ -110,7 +119,6 @@ const DATA_PORTOFOLIO = {
   ]
 };
 
-// Dihapus tab "Beranda", sekarang "Profil Utama" jadi yang pertama.
 const ALL_TABS = [
   { id: 'profil',   label: 'Profil Utama',       shortLabel: 'Profil',     icon: <User size={18}/> },
   { id: 'artefak',  label: 'Artefak PPL',        shortLabel: 'Artefak',    icon: <BookOpen size={18}/> },
@@ -121,13 +129,12 @@ const ALL_TABS = [
 ];
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('profil'); // Default tab diganti ke profil
+  const [activeTab, setActiveTab] = useState('profil'); 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const currentTabInfo = ALL_TABS.find(t => t.id === activeTab);
   const currentIndex = ALL_TABS.findIndex(t => t.id === activeTab);
   
-  // Logika untuk tombol Navigasi Bawah
   const prevTab = ALL_TABS[(currentIndex - 1 + ALL_TABS.length) % ALL_TABS.length];
   const nextTab = ALL_TABS[(currentIndex + 1) % ALL_TABS.length];
 
@@ -166,9 +173,10 @@ export default function App() {
       </div>
 
       <nav className="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-50 border-b border-teal-100/50">
-        <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <div className="flex justify-between items-center py-3.5">
-            <div className="flex items-center gap-3">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          {/* Menu & Logo sejajar dengan jarak optimal */}
+          <div className="flex justify-between lg:justify-start items-center py-3.5 lg:gap-10">
+            <div className="flex items-center gap-3 flex-shrink-0">
               <div className="bg-gradient-to-br from-teal-500 to-emerald-400 p-2.5 rounded-xl shadow-md shadow-teal-200/50">
                 <Award className="w-5 h-5 text-white" />
               </div>
@@ -241,23 +249,25 @@ export default function App() {
       <main className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-8 md:py-12 flex-grow">
         {renderContent()}
 
-        {/* Tombol Navigasi Bawah (Berada di semua halaman) */}
-        <div className="mt-16 pt-8 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4 animate-fade-in-up">
-          <button 
-            onClick={() => handleTabChange(prevTab.id)}
-            className="w-full sm:w-auto px-6 py-3 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50 hover:text-teal-600 font-bold flex items-center justify-center transition-all"
-          >
-            <ChevronLeft className="w-5 h-5 mr-2" />
-            Kembali: {prevTab.shortLabel}
-          </button>
-          <button 
-            onClick={() => handleTabChange(nextTab.id)}
-            className="w-full sm:w-auto px-8 py-3 rounded-xl bg-teal-600 text-white shadow-md hover:bg-teal-700 font-bold flex items-center justify-center transition-all hover:-translate-y-1"
-          >
-            Lanjut: {nextTab.label}
-            <ChevronRight className="w-5 h-5 ml-2" />
-          </button>
-        </div>
+        {/* Tombol Navigasi Bawah (HANYA MUNCUL SELAIN DI HALAMAN PROFIL) */}
+        {activeTab !== 'profil' && (
+          <div className="mt-16 pt-8 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4 animate-fade-in-up">
+            <button 
+              onClick={() => handleTabChange(prevTab.id)}
+              className="w-full sm:w-auto px-6 py-3 rounded-xl border border-slate-200 text-slate-600 hover:bg-slate-50 hover:text-teal-600 font-bold flex items-center justify-center transition-all"
+            >
+              <ChevronLeft className="w-5 h-5 mr-2" />
+              Kembali: {prevTab.shortLabel}
+            </button>
+            <button 
+              onClick={() => handleTabChange(nextTab.id)}
+              className="w-full sm:w-auto px-8 py-3 rounded-xl bg-teal-600 text-white shadow-md hover:bg-teal-700 font-bold flex items-center justify-center transition-all hover:-translate-y-1"
+            >
+              Lanjut: {nextTab.label}
+              <ChevronRight className="w-5 h-5 ml-2" />
+            </button>
+          </div>
+        )}
       </main>
 
       <footer className="bg-white border-t border-slate-200 py-8 text-center mt-auto">
@@ -273,9 +283,8 @@ export default function App() {
 
 // ─── Profil & Beranda Gabungan ──────────────────────────────────────────────
 const ProfilSection = ({ setActiveTab }) => {
-  const { profil } = DATA_PORTOFOLIO;
+  const { profil, sekolahPPL } = DATA_PORTOFOLIO;
   
-  // Fitur untuk men-scroll mulus ke bagian profil
   const profilRef = useRef(null);
   const scrollToProfil = () => {
     profilRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -284,7 +293,7 @@ const ProfilSection = ({ setActiveTab }) => {
   return (
     <div className="space-y-16 animate-fade-in-up">
       
-      {/* 1. BAGIAN ATAS: HERO / SAPAAN (Pindahan dari Beranda) */}
+      {/* 1. BAGIAN ATAS: HERO / SAPAAN */}
       <div className="min-h-[75vh] flex flex-col items-center justify-center text-center px-4">
         <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-md text-teal-700 rounded-full text-xs md:text-sm font-bold mb-6 border border-teal-100 shadow-sm">
           <Sparkles className="w-4 h-4 mr-2 text-amber-500" /> SELAMAT DATANG DI RUANG BELAJAR SAYA
@@ -300,15 +309,12 @@ const ProfilSection = ({ setActiveTab }) => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-          {/* Tombol 1: Scroll mulus ke bawah (ke kartu profil) */}
           <button 
             onClick={scrollToProfil} 
             className="px-8 py-3.5 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-xl font-bold shadow-lg shadow-teal-200/50 hover:-translate-y-1 transition-all flex items-center justify-center w-full sm:w-auto"
           >
             Mengenal Lebih Dekat <ChevronRight className="w-5 h-5 ml-2 transform rotate-90" />
           </button>
-          
-          {/* Tombol 2: Pindah tab ke halaman Artefak */}
           <button 
             onClick={() => setActiveTab('artefak')} 
             className="px-8 py-3.5 bg-white text-slate-700 border border-slate-200 rounded-xl font-bold shadow-sm hover:bg-slate-50 hover:-translate-y-1 transition-all flex items-center justify-center w-full sm:w-auto"
@@ -318,7 +324,7 @@ const ProfilSection = ({ setActiveTab }) => {
         </div>
       </div>
 
-      {/* 2. BAGIAN BAWAH: KARTU PROFIL UTAMA */}
+      {/* 2. BAGIAN TENGAH: KARTU PROFIL UTAMA */}
       <div 
         ref={profilRef} 
         className="bg-white rounded-[2rem] shadow-xl shadow-teal-100/30 border border-white overflow-hidden flex flex-col md:flex-row items-stretch scroll-mt-28"
@@ -330,7 +336,7 @@ const ProfilSection = ({ setActiveTab }) => {
               <img src={profil.fotoProfil} alt="Foto Profil" className="w-[90%] h-[90%] object-cover object-top transition-transform duration-700 group-hover:scale-110" />
             </div>
             <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-violet-500 to-purple-500 text-white p-3 rounded-full shadow-lg border-4 border-white animate-bounce">
-              <Target className="w-5 h-5" />
+              <User className="w-5 h-5" />
             </div>
           </div>
         </div>
@@ -361,6 +367,63 @@ const ProfilSection = ({ setActiveTab }) => {
           </div>
         </div>
       </div>
+
+      {/* 3. BAGIAN BAWAH: INFORMASI SEKOLAH PPL */}
+      <div className="bg-white rounded-[2rem] shadow-xl shadow-teal-100/30 border border-slate-100 p-8 md:p-12 overflow-hidden relative group hover:shadow-2xl hover:shadow-violet-100/50 transition-all duration-500">
+        <div className="absolute top-[-20%] right-[-10%] w-64 h-64 bg-violet-100/40 rounded-full blur-3xl mix-blend-multiply group-hover:scale-110 transition-transform duration-700"></div>
+        
+        <div className="relative z-10">
+          <div className="inline-flex items-center px-4 py-1.5 bg-violet-50 text-violet-700 rounded-full text-xs font-bold mb-6 border border-violet-100">
+            <Target className="w-3.5 h-3.5 mr-2 text-violet-500" /> TEMPAT PPL TERBIMBING
+          </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 tracking-tight">
+            {sekolahPPL.nama}
+          </h2>
+          
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div className="flex items-start">
+              <div className="p-3 bg-teal-50 rounded-xl mr-4 shrink-0 border border-teal-100">
+                <User className="w-5 h-5 text-teal-600" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-slate-900 mb-1">Kepala Sekolah & Peserta Didik</h4>
+                <p className="text-sm text-slate-600 leading-relaxed">Dipimpin oleh <strong>{sekolahPPL.kepalaSekolah}</strong> dengan total keseluruhan <strong>{sekolahPPL.jumlahSiswa}</strong> yang tersebar di 32 rombongan belajar.</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start">
+              <div className="p-3 bg-amber-50 rounded-xl mr-4 shrink-0 border border-amber-100">
+                <BookOpen className="w-5 h-5 text-amber-600" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-slate-900 mb-1">Implementasi Kurikulum</h4>
+                <p className="text-sm text-slate-600 leading-relaxed">Menggunakan <strong>{sekolahPPL.kurikulum}</strong> dengan pendekatan inovatif melalui pengintegrasian kokurikuler terpadu.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <div className="p-3 bg-violet-50 rounded-xl mr-4 shrink-0 border border-violet-100">
+                <Star className="w-5 h-5 text-violet-600" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-slate-900 mb-1">Visi & Tujuan</h4>
+                <p className="text-sm text-slate-600 leading-relaxed italic">"{sekolahPPL.visi}"</p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <div className="p-3 bg-emerald-50 rounded-xl mr-4 shrink-0 border border-emerald-100">
+                <Award className="w-5 h-5 text-emerald-600" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-slate-900 mb-1">Fasilitas & Keunggulan</h4>
+                <p className="text-sm text-slate-600 leading-relaxed">Didukung oleh <strong>{sekolahPPL.fasilitas}</strong> Memiliki <strong>{sekolahPPL.keunggulan}</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
   );
 };
@@ -421,7 +484,6 @@ const ArtefakSection = () => {
               </div>
             </div>
             
-            {/* Tombol Interaktif Aktif <a> */}
             <div className="mt-5 flex flex-wrap gap-3">
               <a href={item.linkBerkas} target="_blank" rel="noopener noreferrer" className="text-sm bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-xl font-semibold shadow-md shadow-teal-200 hover:-translate-y-0.5 transition-all flex items-center w-full sm:w-auto justify-center">
                 <FileText className="w-4 h-4 mr-2" /> Buka RPP
