@@ -28,32 +28,32 @@ const customStyles = `
 `;
 
 // ============================================================================
-// DATA PORTOFOLIO (Silakan sesuaikan data Anda di sini)
+// HALAMAN ADMIN (DATA JSON) - SILAKAN EDIT DATA ANDA DI SINI
 // ============================================================================
 const DATA_PORTOFOLIO = {
   profil: {
     nama: "Raudhatul Jannah",
     bidangStudi: "PPG Informatika",
     asalDaerah: "Saya berasal dari daerah yang sedang berkembang pesat secara digital. Menariknya, walau teknologi mulai masuk ke berbagai aspek kehidupan di sini, masyarakatnya tetap menjaga kearifan lokal. Ini yang bikin saya sadar kalau teknologi itu harus diajarkan sesuai dengan konteks lingkungan siswanya.",
-    inspirasi: "Jujur, awalnya saya cuma suka ngoding dan ngotak-ngatik komputer di kamar. Tapi sewaktu ada kesempatan mengajar dasar IT di sebuah sekolah binaan, melihat antusiasme anak-anak waktu program 'Hello World' mereka berhasil jalan itu rasanya luar biasa. Momen itu yang memantapkan saya memilih jalan pendidikan.",
-    tujuan: "Lulus dari PPG ini, saya tidak sekadar mengejar gelar Gr. Saya bertekad menjadi pendidik Informatika yang relevan—guru yang mampu meramu Computational Thinking menjadi sesuatu yang aplikatif, mudah dipahami, dan tidak hanya berfokus pada hafalan teori semata.",
-    kutipan: '"Guru yang baik itu ibarat programmer yang sabar; mereka tahu bagaimana men-debug kebingungan siswanya baris demi baris sampai menemukan sebuah pemahaman yang berjalan tanpa error."',
-    // Foto Kolase (Ganti dengan path fotomu, misal: "/assets/foto1.jpg")
+    inspirasi: "Jujur, awalnya saya cuma suka ngoding dan ngotak-ngatik komputer di kamar. Tapi sewaktu ada kesempatan ngajar dasar IT di sebuah sekolah binaan, ngeliat antusiasme anak-anak waktu program 'Hello World' mereka berhasil jalan itu rasanya luar biasa. Momen itu yang bikin saya mantap milih jalan jadi guru.",
+    tujuan: "Lulus dari PPG ini, saya nggak cuma mau dapet gelar Gr. Saya mau jadi guru Informatika yang relevan—guru yang bisa bikin computational thinking itu asyik, gampang dipahami, dan nggak cuma sekadar ngafalin teori di buku cetak.",
+    kutipan: '"Guru yang baik itu ibarat programmer yang sabar; mereka tahu gimana men-debug kebingungan siswanya baris demi baris sampai jadi sebuah pemahaman yang jalan tanpa error."',
+    // Foto Kolase (Ganti dengan path fotomu)
     images: [
-      "https://placeholder.co/400x600/1abc9c/ffffff?text=Pose+1",
-      "https://placeholder.co/400x600/34495e/ffffff?text=Pose+2",
-      "https://placeholder.co/400x600/9b59b6/ffffff?text=Pose+3"
+      "/assets/foto1.jpg", // Foto Kiri
+      "/assets/foto2.jpg", // Foto Tengah
+      "/assets/foto3.jpg"  // Foto Kanan
     ]
   },
   modelGuru: {
     misi: [
-      "Menciptakan iklim laboratorium yang aman secara psikologis untuk 'trial & error' tanpa rasa takut salah.",
-      "Memperkenalkan perkakas industri (seperti VS Code atau Git) sejak dini agar siswa memiliki kesiapan karir.",
-      "Berperan sebagai fasilitator dan mitra diskusi bagi siswa yang ingin mengeksplorasi proyek IT mandiri."
+      "Menciptakan suasana kelas atau lab yang aman buat trial & error (nggak takut salah ketik kode).",
+      "Ngenalin tools kekinian (kayak VS Code atau Git) sejak dini biar siswa siap sama dunia kerja asli.",
+      "Jadi temen diskusi buat siswa yang pengen eksplor bikin project IT mereka sendiri."
     ],
-    kompetensi: "Fokus pengembangan utama saya saat ini adalah memperkuat kerangka TPACK, khususnya dalam menemukan analogi dunia nyata untuk menyederhanakan konsep jaringan maupun algoritma abstrak agar lebih mudah dicerna oleh nalar siswa.",
-    karakter: "Adaptif terhadap perubahan, responsif terhadap umpan balik konstruktif dari siswa, dan berkomitmen untuk menjadi pembelajar sepanjang hayat mengingat dinamika teknologi yang sangat cepat.",
-    fotoKegiatan: "https://placeholder.co/600x400/9b59b6/ffffff?text=Kegiatan+Sekolah"
+    kompetensi: "Fokus utama saya sekarang adalah ningkatin TPACK, terutama gimana caranya nyari analogi di dunia nyata untuk ngejelasin konsep jaringan atau algoritma yang abstrak ke anak-anak biar gampang dicerna.",
+    karakter: "Terbuka sama feedback, nggak anti dikritik siswa kalau ngajarnya ngebosenin, dan selalu mau belajar hal baru karena dunia IT itu cepet banget updatenya.",
+    fotoKegiatan: "/assets/foto-kegiatan.jpg"
   },
   artefak: [
     {
@@ -61,58 +61,64 @@ const DATA_PORTOFOLIO = {
       siklus: "Siklus 1",
       judul: "Modul Ajar & Praktik Pemrograman Dasar",
       jenis: "RPP dan Praktik Mengajar",
-      konteks: "Pembelajaran dilaksanakan di Laboratorium Komputer untuk materi dasar algoritma. Mayoritas peserta didik kelas X belum memiliki pengalaman menulis sintaks kode sebelumnya.",
-      tujuan: "Mengenalkan fondasi logika algoritmik (sekuensial) secara bertahap menggunakan antarmuka visual sebelum memasuki fase pengkodean berbasis teks.",
-      kendala: "Keterbatasan alokasi waktu praktikum. Ketika proses 'debugging' kode siswa terjadi secara masif, pendampingan individual menjadi kurang optimal karena rasio guru dan siswa yang tidak seimbang.",
-      teori: "Kondisi ini relevan dengan konsep Scaffolding (Vygotsky). Pada tahap introduksi bahasa pemrograman baru, bimbingan terstruktur sangat esensial sebelum siswa mencapai kemandirian belajar.",
-      keberhasilan: "Peserta didik menunjukkan antusiasme tinggi karena dapat langsung mempraktikkan teori. Penggunaan platform visual sangat efektif dalam mereduksi kecemasan awal mereka terhadap pemrograman.",
-      perubahan: "Untuk implementasi mendatang, saya akan merancang sistem tutor sebaya (peer tutoring) dan membagi kelas ke dalam kelompok kecil untuk mengoptimalkan pendampingan.",
-      foto: "https://placeholder.co/600x400/34495e/ffffff?text=Siklus+1"
+      konteks: "Waktu itu ngajar di Lab Komputer buat materi dasar algoritma. Mayoritas anak kelas X ini bener-bener blank soal koding dan belum pernah ngetik sintaks sama sekali.",
+      tujuan: "Mengenalkan logika berpikir algoritmik (sekuensial) pelan-pelan tanpa bikin mereka langsung takut lihat layar hitam.",
+      kendala: "Waktu praktikum terasa kurang. Ketika satu siswa error kodenya, saya harus nyamperin satu-satu, jadi agak keteteran nge-handle satu lab sendirian.",
+      teori: "Kondisi ini relate banget sama teorinya Vygotsky soal 'Scaffolding'. Di tahap awal ngenalin bahasa baru, pendampingan intens itu krusial banget sebelum mereka bisa dilepas mandiri.",
+      keberhasilan: "Anak-anak lumayan excited karena langsung praktek. Pakai platform visual di awal ngebantu banget nurunin rasa tegang mereka.",
+      perubahan: "Untuk kelas yang siswanya banyak, saya akan merancang sistem tutor sebaya (peer tutoring) agar pendampingan lebih optimal.",
+      foto: "/assets/foto-siklus1.jpg",
+      // LINK G-DRIVE UNTUK TOMBOL
+      rppUrl: "https://drive.google.com/...", 
+      videoUrl: "https://youtube.com/..."
     },
     {
       id: 2,
       siklus: "Siklus 2",
       judul: "Media Interaktif Jaringan Dasar",
       jenis: "Media Pembelajaran",
-      konteks: "Materi topologi jaringan memiliki tingkat abstraksi tinggi. Oleh karena itu, pembelajaran dirancang menggunakan proyektor dan simulasi interaktif di ruang kelas reguler.",
-      tujuan: "Memfasilitasi visualisasi aliran data antar-node dalam berbagai arsitektur topologi jaringan secara konkret.",
-      kendala: "Membutuhkan persiapan infrastruktur konektivitas yang matang. Sempat terjadi latensi (*lag*) saat memuat halaman web simulasi secara serentak.",
-      teori: "Implementasi ini sejalan dengan Teori Dual Coding (Paivio). Kombinasi antara penjelasan verbal dan animasi visual terbukti mempercepat proses asimilasi konsep abstrak pada peserta didik.",
-      keberhasilan: "Dinamika kelas jauh lebih interaktif dibandingkan siklus sebelumnya. Beberapa siswa proaktif mengajukan diri untuk mendemonstrasikan simulasi di depan rekan-rekannya.",
-      perubahan: "Sebagai langkah mitigasi jaringan, saya akan menyiapkan repositori luring (offline) dari simulasi tersebut atau menggunakan media video yang telah diunduh sebelumnya.",
-      foto: "https://placeholder.co/600x400/e67e22/ffffff?text=Siklus+2"
+      konteks: "Materi topologi jaringan ini lumayan bikin ngantuk kalau cuma diceramahin. Jadi pembelajaran di set di ruang kelas biasa tapi pakai proyektor & simulasi interaktif.",
+      tujuan: "Biar siswa bisa kebayang secara visual gimana sih data itu jalan-jalan dari satu komputer ke komputer lain di beda-beda topologi.",
+      kendala: "Persiapannya lumayan rempong karena harus mastiin koneksi kelas stabil. Sempat ada nge-lag dikit pas buka web simulasinya.",
+      teori: "Ini membuktikan Teori Dual Coding (Paivio). Waktu anak-anak dengerin penjelasan saya (verbal) sambil lihat animasi data gerak (visual), mereka lebih cepet nangkep idenya.",
+      keberhasilan: "Dinamika kelas jauh lebih interaktif. Ada beberapa siswa proaktif maju untuk nyoba simulasinya langsung di depan temen-temennya.",
+      perubahan: "Sebagai mitigasi jaringan, saya akan siapkan repositori luring (offline) dari simulasi tersebut atau media video yang sudah di-download.",
+      foto: "/assets/foto-siklus2.jpg",
+      // LINK G-DRIVE UNTUK TOMBOL
+      rppUrl: "https://drive.google.com/...", 
+      videoUrl: "https://youtube.com/..."
     }
   ],
   penilaian: {
-    deskripsi: "Bagian ini mendokumentasikan kompilasi hasil evaluasi, instrumen penilaian, serta catatan refleksi kolaboratif bersama Guru Pamong (GP) dan Dosen Pembimbing Lapangan (DPL) selama rangkaian PPL.",
+    deskripsi: "Bagian ini mendokumentasikan kompilasi hasil evaluasi, instrumen penilaian, serta catatan refleksi kolaboratif bersama Guru Pamong (GP) dan Dosen Pembimbing Lapangan (DPL) selama PPL.",
     lampiran: [
-      { nama: "Lampiran 1: Dokumen Laporan Hasil Observasi Lengkap", status: "Telah Direviu" },
-      { nama: "Lampiran 2: Isian Lembar Kerja LK 1 – Orientasi & Observasi", status: "Selesai" },
-      { nama: "Lampiran 3: Isian Lembar Kerja LK 2 – Lingkungan Belajar", status: "Selesai" },
-      { nama: "Lampiran 4: Isian Lembar Kerja LK 3 – Refleksi Praktik", status: "Selesai" },
-      { nama: "Lampiran 5: Isian Lembar Kerja LK 4 – Perangkat Pembelajaran", status: "Selesai" },
-      { nama: "Lampiran 6: Lembar Observasi Karakteristik Peserta Didik", status: "Telah Diparaf" },
-      { nama: "Lampiran 7: Lembar Observasi Rencana Pelaksanaan Pembelajaran", status: "Telah Diparaf" },
-      { nama: "Lampiran 8: Lembar Observasi Pelaksanaan Pembelajaran", status: "Telah Diparaf" },
-      { nama: "Lampiran 9: Lembar Observasi Manajemen & Lingkungan", status: "Telah Diparaf" },
-      { nama: "Lampiran 10: Jurnal Harian Mahasiswa PPL 1", status: "Terverifikasi" },
-      { nama: "Lampiran 11: Format Penilaian Perangkat Pembelajaran (DPL & GP)", status: "Dinilai" },
-      { nama: "Lampiran 12: Format Penilaian Pelaksanaan Pembelajaran (DPL & GP)", status: "Dinilai" },
-      { nama: "Lampiran 13: Format Penilaian Kompetensi Personal & Sosial", status: "Dinilai" },
-      { nama: "Lampiran 14: Dokumentasi Foto Kegiatan Mengajar", status: "Terlampir" },
-      { nama: "Lampiran 15: Rekapitulasi Penilaian Akhir PPL 1", status: "Selesai" }
+      { nama: "Lampiran 1: Laporan Hasil Observasi Lengkap (Format Lampiran 6)", status: "Telah Direviu", url: "#" },
+      { nama: "Lampiran 2: Isian LK 1 – Orientasi & Observasi Manajemen Sekolah", status: "Selesai", url: "#" },
+      { nama: "Lampiran 3: Isian LK 2 – Observasi Lingkungan Belajar", status: "Selesai", url: "#" },
+      { nama: "Lampiran 4: Isian LK 3 – Refleksi Pembelajaran Praktik Asistensi", status: "Selesai", url: "#" },
+      { nama: "Lampiran 5: Isian LK 4 – Perangkat dan Pelaksanaan Pembelajaran", status: "Selesai", url: "#" },
+      { nama: "Lampiran 6: Lembar Observasi Karakteristik Peserta Didik", status: "Telah Diparaf", url: "#" },
+      { nama: "Lampiran 7: Lembar Observasi Rencana Pelaksanaan Pembelajaran (RPP)", status: "Telah Diparaf", url: "#" },
+      { nama: "Lampiran 8: Lembar Observasi Pelaksanaan Pembelajaran (Observer & Supervisor)", status: "Telah Diparaf", url: "#" },
+      { nama: "Lampiran 9: Lembar Observasi Manajemen Sekolah & Lingkungan", status: "Telah Diparaf", url: "#" },
+      { nama: "Lampiran 10: Jurnal Harian Mahasiswa PPL 1 (Verifikasi Per 5 Hari)", status: "Terverifikasi", url: "#" },
+      { nama: "Lampiran 11: Format Penilaian Perangkat Pembelajaran oleh DPL dan GP", status: "Dinilai", url: "#" },
+      { nama: "Lampiran 12: Format Penilaian Pelaksanaan Pembelajaran oleh DPL dan GP", status: "Dinilai", url: "#" },
+      { nama: "Lampiran 13: Format Penilaian Kompetensi Personal dan Sosial", status: "Dinilai", url: "#" },
+      { nama: "Lampiran 14: Dokumentasi Foto Kegiatan (Proses Mengajar, Diskusi, dll)", status: "Terlampir", url: "#" },
+      { nama: "Lampiran 15: Jurnal Refleksi Akhir / Rekapitulasi Akhir", status: "Selesai", url: "#" }
     ],
     catatanAkhir: "Mahasiswa menunjukkan progres yang konkrit dari siklus 1 hingga siklus akhir. Penguasaan materi berbanding lurus dengan kemampuan manajemen laboratorium yang semakin interaktif dan komunikatif. Pemilihan media pembelajaran juga dinilai sangat relevan dengan kebutuhan generasi digital saat ini."
   },
   refleksiAkhir: {
-    pembelajaran: "Selama menjalani PPL Terbimbing, saya mensintesis bahwa mengajar melampaui batas transfer pengetahuan; ia adalah seni menjembatani konsep teoretis dengan relevansi dunia nyata siswa. Saya menyadari bahwa orkestrasi di laboratorium komputer menuntut presisi pedagogik yang berbeda dari kelas reguler—memerlukan peta jalan aktivitas praktikum yang sangat terstruktur.",
-    tantangan: "Tantangan paling signifikan adalah mengelola disparitas literasi digital peserta didik dalam satu rombongan belajar. Solusi taktis yang saya terapkan adalah 'Differentiated Instruction': merancang pengayaan bagi kelompok yang telah mahir, seraya memberikan 'scaffolding' berlapis bagi mereka yang masih di tahap adaptasi dasar.",
-    umpanBalik: "DPL merekomendasikan peningkatan intensitas pendekatan Sokratik (teknik bertanya) yang memicu nalar analitis, alih-alih konfirmasi tertutup. Sementara itu, GP menyoroti urgensi pembagian fase praktikum yang lebih definitif (Eksplorasi, Demonstrasi, Evaluasi) guna efisiensi alokasi waktu."
+    pembelajaran: "Selama menjalani PPL Terbimbing, saya mensintesis bahwa mengajar melampaui batas transfer pengetahuan; ia adalah seni menjembatani konsep teoretis dengan relevansi dunia nyata siswa. Saya menyadari bahwa orkestrasi di lab komputer menuntut presisi pedagogik yang berbeda dari kelas reguler.",
+    tantangan: "Tantangan paling signifikan adalah mengelola disparitas literasi digital siswa dalam satu rombongan belajar. Solusi taktis yang saya terapkan adalah 'Differentiated Instruction': merancang pengayaan bagi kelompok mahir, seraya memberikan 'scaffolding' berlapis bagi yang di tahap dasar.",
+    umpanBalik: "DPL merekomendasikan peningkatan intensitas teknik bertanya Sokratik yang memicu nalar analitis. Sementara itu, GP menyoroti urgensi pembagian fase praktikum yang lebih definitif (Eksplorasi, Demonstrasi, Evaluasi) guna efisiensi alokasi waktu."
   },
   filosofi: [
-    "Saya meyakini bahwa setiap peserta didik adalah pemikir komputasional yang sedang mencari konteksnya. Filosofi pengajaran saya berpijak pada paradigma bahwa Informatika bukanlah entitas teknis semata, melainkan sebuah instrumen berpikir logis untuk memecahkan problematika dunia nyata. Mengacu pada konstruktivisme, saya memosisikan siswa sebagai arsitek pengetahuannya sendiri melalui pengalaman empiris.",
-    "Dalam kerangka praktis, saya mengadopsi model Problem-Based Learning yang terinspirasi dari gagasan 'learning by doing' John Dewey. Setiap nomenklatur—mulai dari sekuens algoritma hingga arsitektur jaringan—saya elaborasi ke dalam simulasi kasus keseharian. Hal ini berkorelasi dengan prinsip Relevansi, di mana motivasi intrinsik akan tumbuh ketika materi memiliki resonansi dengan kehidupan siswa.",
-    "Pada akhirnya, saya memegang teguh pedoman bahwa asesmen sejatinya bersifat membebaskan, bukan membelenggu. Diilhami oleh paradigma Assessment for Learning (AfL), saya mendefinisikan umpan balik sebagai dialog edukatif yang berkesinambungan. Galat (error) pada baris kode adalah permulaan dari sebuah diskusi intelektual, bukan vonis akhir dari kompetensi."
+    "Saya meyakini bahwa setiap peserta didik adalah pemikir komputasional yang sedang mencari konteksnya. Filosofi pengajaran saya berpijak pada paradigma bahwa Informatika bukanlah entitas teknis semata, melainkan sebuah instrumen berpikir logis untuk memecahkan problematika dunia nyata.",
+    "Dalam kerangka praktis, saya mengadopsi model Problem-Based Learning yang terinspirasi dari gagasan 'learning by doing' John Dewey. Setiap nomenklatur saya elaborasi ke dalam simulasi kasus keseharian. Hal ini berkorelasi dengan prinsip Relevansi, di mana motivasi akan tumbuh ketika materi beresonansi dengan kehidupan siswa.",
+    "Pada akhirnya, saya memegang teguh pedoman bahwa asesmen sejatinya bersifat membebaskan, bukan membelenggu. Galat (error) pada baris kode adalah permulaan dari sebuah diskusi intelektual, bukan vonis akhir dari kompetensi."
   ]
 };
 
@@ -138,7 +144,7 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' }); 
   };
 
-  // Logika untuk mencari halaman Sebelumnya dan Selanjutnya (Siklus Berputar)
+  // Kalkulasi Tab Sebelumnya & Selanjutnya untuk Tombol Bawah
   const currentIndex = ALL_TABS.findIndex(t => t.id === activeTab);
   const prevTab = ALL_TABS[(currentIndex - 1 + ALL_TABS.length) % ALL_TABS.length];
   const nextTab = ALL_TABS[(currentIndex + 1) % ALL_TABS.length];
@@ -157,14 +163,13 @@ export default function App() {
     <div className="min-h-screen bg-[#fafafa] text-slate-800 selection:bg-teal-100 selection:text-teal-900 relative">
       <style>{customStyles}</style>
 
-      {/* Dekorasi Latar Belakang */}
+      {/* Dekorasi Background */}
       <div className="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-teal-200/40 rounded-full blur-3xl mix-blend-multiply"></div>
         <div className="absolute top-[20%] right-[-10%] w-[30rem] h-[30rem] bg-violet-200/30 rounded-full blur-3xl mix-blend-multiply"></div>
-        <div className="absolute bottom-[10%] left-[20%] w-80 h-80 bg-emerald-100/30 rounded-full blur-3xl mix-blend-multiply"></div>
       </div>
 
-      {/* Navbar Responsive */}
+      {/* NAVBAR */}
       <nav className="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-50 border-b border-teal-100/50">
         <div className="max-w-7xl mx-auto px-4 xl:px-6">
           <div className="flex justify-between items-center py-3.5">
@@ -185,12 +190,12 @@ export default function App() {
             </div>
 
             {/* Kanan (Desktop): Navigasi Tab sejajar */}
-            <div className="hidden lg:flex gap-1.5 bg-slate-50 p-1.5 rounded-2xl border border-slate-100 overflow-x-auto hide-scrollbar">
+            <div className="hidden lg:flex gap-1 bg-slate-50 p-1.5 rounded-2xl border border-slate-100">
               {ALL_TABS.map(t => (
                 <button 
                   key={t.id} 
                   onClick={() => handleTabChange(t.id)}
-                  className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl transition-all duration-300 whitespace-nowrap text-sm font-semibold ${
+                  className={`flex items-center gap-1.5 px-3 py-2 rounded-xl transition-all duration-300 whitespace-nowrap text-xs xl:text-sm font-semibold ${
                     activeTab === t.id
                       ? 'bg-white text-teal-700 shadow-sm border border-slate-200/60'
                       : 'text-slate-500 hover:bg-white/60 hover:text-teal-600'
@@ -243,11 +248,11 @@ export default function App() {
         )}
       </nav>
 
-      {/* Konten Utama */}
+      {/* KONTEN UTAMA */}
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-12 min-h-[80vh]">
         {renderContent()}
 
-        {/* Navigasi Bawah (Hanya tampil jika BUKAN di halaman Beranda) */}
+        {/* TOMBOL NAVIGASI BAWAH (Sembunyi di Beranda) */}
         {activeTab !== 'beranda' && (
           <div className="mt-16 pt-8 border-t border-slate-200/60 flex flex-col-reverse sm:flex-row justify-between items-center gap-4 animate-fade-in-up">
             <button 
@@ -269,7 +274,6 @@ export default function App() {
         )}
       </main>
 
-      {/* Footer */}
       <footer className="bg-white border-t border-slate-200 py-8 text-center mt-auto">
         <div className="max-w-6xl mx-auto px-4 flex flex-col items-center">
           <Sparkles className="w-6 h-6 text-teal-400 mb-3" />
@@ -291,12 +295,12 @@ const BerandaSection = ({ setActiveTab }) => {
       </div>
       
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6 max-w-4xl">
-        Merangkum Proses, <br className="hidden md:block" />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-violet-600">Menjadi Guru yang Lebih Baik</span>
+        Merekam Jejak, <br className="hidden md:block" />
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-violet-600">Menjadi Pendidik Profesional</span>
       </h1>
       
       <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-3xl leading-relaxed">
-        Halo! Halaman ini adalah jurnal kecil tempat saya, <strong className="text-slate-800">{profil.nama}</strong>, bercerita tentang perjalanan selama mengikuti PPG <strong>{profil.bidangStudi}</strong>. Di sini, Bapak/Ibu bisa melihat hasil tugas, pengalaman mengajar di lab, serta refleksi jujur saya tentang apa yang sudah berjalan baik dan apa yang masih perlu dievaluasi.
+        Halo! Halaman ini adalah jurnal kecil tempat saya, <strong className="text-slate-800">{profil.nama}</strong>, mendokumentasikan proses belajar selama mengikuti PPG <strong>{profil.bidangStudi}</strong>. Di sini, Bapak/Ibu dapat melihat hasil rancangan pembelajaran, pengalaman mengajar, serta refleksi evaluasi saya.
       </p>
       
       <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -304,34 +308,37 @@ const BerandaSection = ({ setActiveTab }) => {
           onClick={() => setActiveTab('profil')} 
           className="px-8 py-3.5 bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-xl font-bold shadow-lg shadow-teal-200/50 hover:-translate-y-1 transition-all flex items-center justify-center w-full sm:w-auto"
         >
-          Baca Profil Saya <ChevronRight className="w-5 h-5 ml-2" />
+          Mengenal Lebih Dekat <ChevronRight className="w-5 h-5 ml-2" />
         </button>
         <button 
           onClick={() => setActiveTab('artefak')} 
           className="px-8 py-3.5 bg-white text-slate-700 border border-slate-200 rounded-xl font-bold shadow-sm hover:bg-slate-50 hover:-translate-y-1 transition-all flex items-center justify-center w-full sm:w-auto"
         >
-          <BookOpen className="w-5 h-5 mr-2 text-slate-400" /> Jelajahi Hasil Karya
+          <BookOpen className="w-5 h-5 mr-2 text-slate-400" /> Lihat Karya PPL
         </button>
       </div>
     </div>
   );
 };
 
-// ─── Profil Kolase (Responsive) ──────────────────────────────────────────────
+// ─── Profil Kolase (Responsive dengan Persentase) ────────────────────────────
 const ProfilSection = () => {
   const { profil } = DATA_PORTOFOLIO;
   return (
     <div className="space-y-8 animate-fade-in-up">
       <div className="grid md:grid-cols-[1.5fr,1fr] gap-8 md:gap-12 p-6 md:p-10 rounded-3xl mb-12 bg-white/85 backdrop-blur-md shadow-xl border border-teal-100">
         
-        {/* KOLASE KIRI (Persentase Lebar agar aman di HP) */}
+        {/* KOLASE KIRI (Menggunakan persentase lebar agar tidak pecah di HP) */}
         <div className="relative w-full h-80 md:h-[450px] flex items-center justify-center">
           <div className="absolute top-10 left-5 w-24 h-12 bg-red-400 rounded-full opacity-40 z-0 rotate-12 blur-md"></div>
           <div className="absolute top-10 right-2 w-24 h-12 bg-yellow-400 rounded-full opacity-40 z-0 -rotate-12 blur-md"></div>
 
-          <img src={profil.images[0]} alt="Pose 1" className="absolute top-1/4 left-[5%] w-[40%] h-auto object-cover border-4 border-white shadow-2xl rotate-[-6deg] z-10 transition-transform duration-500 hover:rotate-0 hover:z-40 hover:scale-105" />
-          <img src={profil.images[1]} alt="Pose 2" className="absolute top-[5%] left-[25%] w-[45%] h-auto object-cover border-4 border-white shadow-2xl z-20 transition-transform duration-500 hover:-translate-y-4 hover:z-40 hover:scale-105" />
-          <img src={profil.images[2]} alt="Pose 3" className="absolute top-1/3 right-[5%] w-[38%] h-auto object-cover border-4 border-white shadow-2xl rotate-[6deg] z-30 transition-transform duration-500 hover:rotate-0 hover:z-40 hover:scale-105" />
+          {/* Foto Kiri */}
+          <img src={profil.images[0]} alt="Pose Kiri" className="absolute top-[20%] left-[5%] w-[40%] h-auto object-cover border-4 border-white shadow-2xl rotate-[-6deg] z-10 transition-transform duration-500 hover:rotate-0 hover:z-40 hover:scale-105" />
+          {/* Foto Tengah */}
+          <img src={profil.images[1]} alt="Pose Tengah" className="absolute top-[5%] left-[30%] w-[45%] h-auto object-cover border-4 border-white shadow-2xl z-20 transition-transform duration-500 hover:-translate-y-4 hover:z-40 hover:scale-105" />
+          {/* Foto Kanan */}
+          <img src={profil.images[2]} alt="Pose Kanan" className="absolute top-[30%] right-[5%] w-[38%] h-auto object-cover border-4 border-white shadow-2xl rotate-[6deg] z-30 transition-transform duration-500 hover:rotate-0 hover:z-40 hover:scale-105" />
         </div>
 
         {/* TEKS KANAN */}
@@ -345,14 +352,6 @@ const ProfilSection = () => {
             <div className="p-3 bg-purple-50 text-purple-600 rounded-2xl border border-purple-100"><Target className="w-6 h-6" /></div>
             <div className="p-3 bg-teal-50 text-teal-600 rounded-2xl border border-teal-100"><Sparkles className="w-6 h-6" /></div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100 text-sm">
-            <div className="flex items-center gap-2 text-gray-600 bg-slate-50 px-3 py-2 rounded-lg">
-              <Mail className="w-4 h-4 text-slate-400" /> raudhatul.jannah@ppg.edu
-            </div>
-            <div className="flex items-center gap-2 text-gray-600 bg-slate-50 px-3 py-2 rounded-lg">
-              <Instagram className="w-4 h-4 text-slate-400" /> @raudhatul.j
-            </div>
-          </div>
         </div>
       </div>
 
@@ -360,7 +359,7 @@ const ProfilSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="space-y-4">
             <h3 className="text-xl md:text-2xl font-bold text-gray-900 flex items-center">
-              <Sparkles className="w-6 h-6 mr-2 text-violet-500" /> Latar Belakang & Inspirasi
+              <Sparkles className="w-6 h-6 mr-2 text-violet-500" /> Cerita & Inspirasi
             </h3>
             <p className="text-slate-600 leading-relaxed text-sm md:text-base text-justify">{profil.asalDaerah}</p>
             <p className="text-slate-600 leading-relaxed text-sm md:text-base text-justify">{profil.inspirasi}</p>
@@ -390,7 +389,7 @@ const ArtefakSection = () => {
           <BookOpen className="w-8 h-8" />
         </div>
         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">Kumpulan Artefak PPL</h2>
-        <p className="text-base md:text-lg text-slate-600 leading-relaxed">Analisis mendalam produk pembelajaran—mengulik kendala, teori pedagogi pendukung, hingga proyeksi perbaikan untuk implementasi kelas di masa mendatang.</p>
+        <p className="text-base md:text-lg text-slate-600 leading-relaxed">Analisis mendalam produk pembelajaran—mengulik kendala, teori pedagogi pendukung, hingga proyeksi perbaikan.</p>
       </div>
       {artefak.map((item, index) => (
         <div key={item.id} className={`bg-white rounded-[2rem] shadow-lg border border-slate-100 overflow-hidden flex flex-col lg:flex-row animate-fade-in-up stagger-${(index%2)+1} group hover:shadow-xl transition-all duration-500`}>
@@ -428,13 +427,15 @@ const ArtefakSection = () => {
                 <p className="text-xs text-amber-700 leading-relaxed text-justify">{item.perubahan}</p>
               </div>
             </div>
+            
+            {/* Tombol Diubah menjadi Link (Arahkan ke GDrive) */}
             <div className="mt-6 flex flex-wrap gap-3">
-              <button className="text-sm bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-xl font-semibold shadow-md shadow-teal-200 hover:-translate-y-0.5 transition-all flex items-center w-full sm:w-auto justify-center">
+              <a href={item.rppUrl} target="_blank" rel="noopener noreferrer" className="text-sm bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-xl font-semibold shadow-md shadow-teal-200 hover:-translate-y-0.5 transition-all flex items-center w-full sm:w-auto justify-center">
                 <FileText className="w-4 h-4 mr-2" /> Buka Dokumen RPP
-              </button>
-              <button className="text-sm bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 px-5 py-2.5 rounded-xl font-semibold shadow-sm hover:-translate-y-0.5 transition-all flex items-center w-full sm:w-auto justify-center">
-                <ImageIcon className="w-4 h-4 mr-2 text-slate-400" /> Bukti Rekaman Mengajar
-              </button>
+              </a>
+              <a href={item.videoUrl} target="_blank" rel="noopener noreferrer" className="text-sm bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 px-5 py-2.5 rounded-xl font-semibold shadow-sm hover:-translate-y-0.5 transition-all flex items-center w-full sm:w-auto justify-center">
+                <ImageIcon className="w-4 h-4 mr-2 text-slate-400" /> Bukti Video Mengajar
+              </a>
             </div>
           </div>
         </div>
@@ -453,7 +454,7 @@ const PenilaianSection = () => {
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-teal-100/40 rounded-full blur-3xl translate-y-1/3 -translate-x-1/3"></div>
         
         <div className="relative z-10 flex flex-col lg:flex-row gap-10">
-          {/* Kolom Kiri: Judul & Catatan */}
+          {/* Kolom Kiri: Judul */}
           <div className="lg:w-1/3">
             <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-teal-50 to-emerald-50 text-teal-600 rounded-2xl mb-5 border border-teal-100">
               <Award className="w-10 h-10" />
@@ -461,7 +462,7 @@ const PenilaianSection = () => {
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Kompilasi Penilaian</h2>
             <p className="text-sm md:text-base text-slate-600 mb-8 leading-relaxed text-justify">{penilaian.deskripsi}</p>
             
-            <div className="p-6 bg-gradient-to-br from-teal-50 to-violet-50/40 rounded-2xl border border-teal-100/80 shadow-inner">
+            <div className="p-6 bg-gradient-to-br from-teal-50 to-violet-50/40 rounded-2xl border border-teal-100/80 shadow-inner hidden lg:block">
               <div className="bg-gradient-to-r from-teal-500 to-violet-500 text-white px-3 py-1 rounded-md text-[10px] font-bold shadow-md inline-block mb-3">
                 CATATAN EVALUASI (DPL & GP)
               </div>
@@ -477,10 +478,10 @@ const PenilaianSection = () => {
                 <span className="text-xs font-medium text-slate-400 bg-white px-2 py-1 rounded-md border border-slate-200">Scroll untuk melihat ▾</span>
               </div>
               
-              {/* === CONTAINER SCROLLABLE 450px === */}
+              {/* CONTAINER SCROLLABLE 450px */}
               <div className="space-y-2.5 max-h-[480px] overflow-y-auto pr-2 pb-4 custom-scrollbar">
                 {penilaian.lampiran.map((lamp, idx) => (
-                  <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white rounded-2xl border border-slate-200 hover:border-violet-300 shadow-sm hover:shadow transition-all duration-200 group cursor-pointer">
+                  <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 bg-white rounded-2xl border border-slate-200 hover:border-violet-300 shadow-sm hover:shadow transition-all duration-200 group">
                     <div className="flex items-center mb-3 sm:mb-0">
                       <div className="p-2.5 bg-violet-50 rounded-xl mr-3 group-hover:bg-violet-100 transition-all shrink-0">
                         <FileText className="w-4 h-4 text-violet-600" />
@@ -492,13 +493,21 @@ const PenilaianSection = () => {
                         </p>
                       </div>
                     </div>
-                    <button className="flex items-center justify-center text-xs font-bold text-teal-700 bg-teal-50 hover:bg-teal-600 hover:text-white py-2 px-4 rounded-xl transition-colors duration-300 shrink-0">
+                    {/* Tombol Diubah Menjadi Link (Arahkan ke Google Drive Lampiran) */}
+                    <a href={lamp.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-xs font-bold text-teal-700 bg-teal-50 hover:bg-teal-600 hover:text-white py-2 px-4 rounded-xl transition-colors duration-300 shrink-0">
                       Buka <ChevronRight className="w-3.5 h-3.5 ml-0.5" />
-                    </button>
+                    </a>
                   </div>
                 ))}
               </div>
-              {/* === END SCROLLABLE === */}
+            </div>
+            
+            {/* Teks Evaluasi (Khusus muncul di bawah saat mobile) */}
+            <div className="p-6 mt-6 bg-gradient-to-br from-teal-50 to-violet-50/40 rounded-2xl border border-teal-100/80 shadow-inner lg:hidden">
+              <div className="bg-gradient-to-r from-teal-500 to-violet-500 text-white px-3 py-1 rounded-md text-[10px] font-bold shadow-md inline-block mb-3">
+                CATATAN EVALUASI (DPL & GP)
+              </div>
+              <p className="text-sm text-teal-900/80 leading-relaxed italic font-medium text-justify">"{penilaian.catatanAkhir}"</p>
             </div>
           </div>
         </div>
@@ -521,7 +530,7 @@ const ModelGuruSection = () => {
         <p className="text-base md:text-lg text-slate-600 leading-relaxed">Misi operasional, sasaran kompetensi, dan cetak biru karakter yang dibangun sebagai pilar pendidik abad 21.</p>
       </div>
       <div className="grid lg:grid-cols-2 gap-8">
-        <div className="bg-white rounded-[2rem] shadow-lg border border-slate-100 p-6 md:p-8 hover:shadow-xl hover:shadow-teal-100/40 transition-shadow duration-500">
+        <div className="bg-white rounded-[2rem] shadow-lg border border-slate-100 p-6 md:p-8 hover:shadow-xl transition-shadow duration-500">
           <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 mb-6 flex items-center">
             <div className="p-2 bg-teal-100 rounded-xl mr-3 text-teal-600"><Target className="w-5 h-5" /></div>
             Misi & Rencana Taktis
@@ -608,7 +617,7 @@ const RefleksiSection = () => {
   );
 };
 
-// ─── Filosofi ───────────────────────────────────────────────────────────
+// ─── Filosofi (Dengan perbaikan Style Responsive Text Tailwind) ───────────────
 const FilosofiSection = () => {
   const { filosofi } = DATA_PORTOFOLIO;
   const labels = ["Konstruktivis & Empiris", "Problem-Based & Kontekstual", "Asesmen sebagai Dialog Edukatif"];
@@ -624,12 +633,14 @@ const FilosofiSection = () => {
       <div className="max-w-4xl mx-auto space-y-6 px-2 md:px-0">
         {filosofi.map((para, i) => (
           <div key={i} className="bg-white rounded-[2rem] shadow-lg border border-slate-100 overflow-hidden group hover:shadow-xl hover:shadow-violet-100/40 transition-all duration-500 flex flex-col sm:flex-row">
+            
+            {/* Bagian Angka - Menggunakan Tailwind CSS untuk responsif teks vertikal */}
             <div className="h-12 sm:h-auto sm:w-16 bg-gradient-to-r sm:bg-gradient-to-b from-violet-500 to-teal-500 flex items-center justify-center flex-shrink-0 sm:py-8">
-              {/* PERBAIKAN DI SINI: Memindahkan @media query ke dalam class Tailwind */}
               <span className="text-white font-extrabold text-xl sm:rotate-180 [writing-mode:horizontal-tb] sm:[writing-mode:vertical-rl] tracking-[0.1em]">
                 {`0${i+1}`}
               </span>
             </div>
+            
             <div className="p-6 md:p-9 flex-1 relative">
               <div className="inline-flex items-center px-3 py-1 bg-violet-50 text-violet-700 rounded-full text-[10px] md:text-xs font-bold mb-4 border border-violet-100">
                 <Sparkles className="w-3 h-3 mr-1.5 shrink-0" />{labels[i]}
