@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, User, Star, FileText, Award, ChevronRight, CheckCircle, Target, Image as ImageIcon, Sparkles, BookMarked, Lightbulb, Menu, X, Mail, Instagram, Home, ChevronLeft } from 'lucide-react';
+import { BookOpen, User, Star, FileText, Award, ChevronRight, CheckCircle, Target, Image as ImageIcon, Sparkles, BookMarked, Lightbulb, Menu, X, Home, ChevronLeft } from 'lucide-react';
 
 const customStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
